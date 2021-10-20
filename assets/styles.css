@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Customized css */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+/* General */
+.container{
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 32px;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.heading{
+	margin-top: 70px;
+	color: black;
+	font-size: 28px;
+	text-decoration: underline;
+	text-align: center;
+}
+.sub-heading{
+	font-size: 16px;
+	color: gray;
+	text-align: center;
+	margin-bottom: 30px;
+	font-style: normal;
+}
+/* Header */
+
+.header img{
+	position: relative;
+}
+.media-icons{
+	position: absolute;
+	margin: 20px auto ;
+	z-index: 1;
+	left: 40%;
+	right: 40%;
+}
+.icon{
+	margin: 16px 8px ;
+	background-color: white;
+	font-size:small;
+	color: gray;
+	text-decoration: none;
+	width: 36px;
+	height: 36px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 1.5;
+} 
+.navbar{
+	width: 1000px;
+	background-color: white;
+	position: fixed;
+	margin-top:100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+	left: 14%;
+	right: 14%;
+}
+.navbar-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.inner-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.brand-logo{
+	width: 80px;
+}
+.flex-name{
+	margin-left: 16px;
+}
+.navbar a{
+	text-decoration: none;
+	color: gray;
+	font-weight: 550;
+	margin-right: 20px;
+}
+.navbar .active{
+	color:lightcoral;
+}
+.navbar .flex-name{
+	color: lightcoral;
+	font-size: 28px;
+	font-weight: 600;
+	vertical-align:middle ;
+}
+.banner-heading{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	left: 20%;
+	right: 20%;
+	margin-top: 300px;
+}
+.banner-heading h1{
+	color: white;
+	font-size: 32px;
+}
+hr{
+	border-bottom: 2px solid white ;
+	width: 325px;
+	z-index: 1;
+}
+.banner-heading p{
+	font-style: normal;
+	margin: 20px 0 40px 0;
+	color: white;
+	font-size: 16px;
+}
+.btn{
+	background-color:lightcoral ;
+	padding:16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+}
+.circles-parent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle{
+	text-align: center;
+	background-color: black;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 10px 0 10px 10px;
+}
+.circle-a{
+	background-color: gray;
+}
+.circle-b{
+	background-color: gray;
+}
+/* OUR SERVICES */
+
+.box{
+	margin: 50px 25px;
+	text-decoration: none;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content:space-around ;
+	align-items: center;
+	font-size: 32px;
+	color: white;
+}
+.box-1-4{
+	background-color: mediumseagreen;
+}
+.box-2-4{
+	background-color: orangered;
+}
+.box-3-4{
+	background-color: steelblue;
+}
+.box-4-4{
+	background-color: yellowgreen;
+}
+/* Our portfolio */
+.img{
+	margin: 50px 25px;
+	text-decoration: none;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+/* Our Team */
+.member-img{
+	margin: 50px 25px;
+	text-decoration: none;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+	border-radius: 50%;
+}
+/* Design skills */
+.design-skills h3, p {
+	font-style: italic;
+	color: gray;
+	text-align: center;
+}
+.design-skills h3{
+    font-size: 24px;
+}
+.text{
+	width: 50%;
+	margin-right: auto;
+}
+.subtext{
+	text-align: left;
+	font-style: normal;
+}
+ /* Skills */
+.gray{
+	background-color: rgb(228, 228, 228);
+	width: 350px;
+}
+.orange{
+	background-color: lightcoral;
+	width: 90%;
+	padding: 8px 5px;
+	color: white;
+	margin-top: 20px;
+}
+.orange p {
+	font-size:14px ;
+	color: white;
+	text-align: left;
+	font-style: normal;
+	font-weight: 400;
+}
+.html-css{
+	width: 80%;
+}
+.development{
+	width: 70%;
+}
+.marketing{
+	width: 80%;
+}
+/* Contact */
+.map{
+	margin-top: 30px;
+	width: 100%;
+}
+.mail-id{
+	color: lightcoral;
+}
+.contact-text{
+	width: 800px;
+	margin-right: auto;
+}
+.y-name{
+	width: 400px;
+	padding: 8px 5px;
+	border: 1px solid gray;
+	margin-top: 20px;
+}
+.input-text{
+	color: gray;
+}
+.message-box{
+	height: 100px;
+}
+.send-message-btn{
+	background-color:lightcoral ;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: none;
+}
+/* Footer */
+.footer{
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+.footer-text{
+	font-size: 14px;
+	color: gray;
+}
+.top-btn{
+	display: inline-block;
+	float: right;
+	text-decoration: none;
+	color: white;
+	background-color: lightcoral;
+	padding: 5px 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+/* Gallery Page */
+/* Aside */
+.aside{
+	width: 28%;
+	height: 700vh;
+	padding: 20px 10px;
+	background-color: #ed5240;
+	justify-content: stretch;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.gallery-navbar-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.gallery-brand-logo{
+	width: 50px;
+}
+.gallery-brand-name{
+	font-size: 28px;
+	color: white;
+	margin-left: 16px;
+}
+.gallery-inner-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.home-btn{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+	padding: 5px;
+	border-radius: 3px;
+}
+.aside-text{
+	margin-top: 300px;
+}
+.aside-text h4{
+	color: white;
+	font-size: 18px;
+	font-weight: 600px;
+}
+.aside-text p{
+	font-weight: 600;
+	text-align: left;
+	color: black;
+	font-style: normal;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.gallery-icon{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: small;
+	padding: 10px ;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #ed5240;
+	border: 2px solid white;
+	margin-right: 20px;
+	line-height: 1.5;
+}
+.media-flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* Main */
+.main-flex{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-left: 80px;
+}
+h6{
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 20px;
+	margin: 0 0 20px 400px;
+	font-weight: bolder;
+}
+.gallery-img{
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 3px;
+	margin-bottom: 30px;
+
+}
+.flex-1{
+	flex-direction: column;
+	width: 45%;
+	align-content:flex-start;
+	justify-content: space-between;
+}
+.right{
+	margin:0 50px 0 350px ;
+}
